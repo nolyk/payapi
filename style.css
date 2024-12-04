@@ -1,0 +1,248 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 40px 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+ul li a {
+  color: #36536b;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 700;
+}
+
+ul li button {
+  background-color: #ba4270;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 16px 24px;
+}
+
+.menu {
+  display: none;
+}
+
+.main-text {
+  font-weight: 400;
+  line-height: 72px;
+  color: #36536b;
+  max-width: 546px;
+  font-size: 72px;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img img {
+  width: 263px;
+  height: 500px;
+}
+
+.section2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.second-texts{
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.main-text-sec{
+  font-weight: 400;
+  line-height: 72px;
+  color: #36536b;
+  font-size: 48px;
+  font-family: 'DM Serif Display', serif;
+}
+
+.second-section-text{
+  font-size: 15px;
+  color: rgba(108, 130, 148, 1);
+}
+
+.section2{
+  margin-top: 250px;
+}
+
+.section3{
+  margin-top: 100px;
+}
+
+.third-section-all{
+  display: flex; 
+  justify-content: space-around;
+}
+.third-card1 p{
+  color: rgba(54, 83, 107, 1);
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 32px;
+}
+.third-card1{
+  text-align: center;
+  row-gap: 32px;
+}
+footer{
+  height: 100px;
+  background-color: rgba(27, 38, 47, 1);
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+.footeer-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-ul-1{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer-ul-1 li a{
+  color: rgba(251, 252, 254, 1);
+  font-size: 15px;
+  font-weight: 700;
+}
+.footer-ul-2{
+  display: flex;
+  color: white;
+  font-size: 23px;
+  gap: 25px;
+}
+@media (max-width: 705px) {
+  nav ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+@media (max-width: 977px) {
+  .section1 {
+    flex-direction: column-reverse;
+    row-gap: 48px;
+  }
+
+  .img img {
+    width: 159px;
+    height: 300px;
+  }
+
+  .main-text {
+    max-width: 573px;
+    line-height: 56px;
+    font-size: 48px;
+    text-align: center;
+  }
+}
+@media (max-width: 530px) {
+  .img img {
+    width: 128px;
+    height: 240px;
+  }
+  .main-text {
+    max-width: 327px;
+    line-height: 36px;
+    font-size: 32px;
+    text-align: center;
+  }
+}
+@media (max-width:650px){
+  .section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 210px;
+  }
+  .section2 .img1 img{
+    width: 328px;
+    height: 209px;
+  }
+  .second-texts{
+    text-align: center;
+
+  }
+}
+@media (max-width:977px){
+  .section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 210px;
+  }
+  .section2 .img1 img{
+    width: 328px;
+    height: 209px;
+  }
+  .second-texts{
+    text-align: center;
+
+  }
+}
+@media (max-width:530px){
+  .third-section-all{
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 120px;
+  }
+}
+@media (max-width:530px){
+  footer{
+    display: flex;
+    flex-direction: column;
+    height: 353px;
+    justify-content: space-around;
+  }
+  footer .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .footeer-div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+  }
+  .footer-ul-1{
+    display: flex;
+    flex-direction: column;
+  }
+}
